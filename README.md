@@ -1,6 +1,6 @@
 # QQWry
 
-纯真 IP 库 Laravel 版 。
+纯真 IP 库 thinkphp 版 。
 
 数据库版本：2016.3.26
 
