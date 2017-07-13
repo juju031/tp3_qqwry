@@ -7,19 +7,16 @@
 ## 安装
 
 ```
-composer require tp3/qqwry
+composer require tp3/qqwry dev-master
 ```
 
 更新你的依赖包 ```composer update``` 或者全新安装 ```composer install```。
 
 ## 使用
 
-## 例子
+use juju\qqwry\qqwry;
 
-### Facades用法
-```php
-	use \juju\qqwry\QQWry;
-    $ip = '61.128.128.68';
-    print_r((new QQWry())->getlocation($ip));
-```
-
+$qqwry = new qqwry();
+$ip = "61.128.128.68";
+$ip = $qqwry->ntoa($ip);
+print_r($qqwry->query($ip));
